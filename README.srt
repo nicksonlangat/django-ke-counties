@@ -10,7 +10,7 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 
-1. Add "polls" to your INSTALLED_APPS setting like this::
+1. Add "django_ke_counties" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...,
@@ -19,10 +19,10 @@ Quick start
 
 2. Include the django_ke_counties URLconf in your project urls.py like this::
 
-    path("counties/", include("django_ke_counties.urls")),
+    path("", include("django_ke_counties.urls")),
 
 3. Run ``python manage.py migrate`` to create the models and seed data.
 
 4. Start the development server and visit the admin to create a poll.
 
-5. Visit the ``/counties/`` URL to participate in the poll.
+5. Visit the ``/counties/`` URL to see it live.
