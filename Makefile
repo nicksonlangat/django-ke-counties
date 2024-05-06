@@ -10,3 +10,5 @@ test:
 	export DJANGO_SETTINGS_MODULE=mysite.settings && pytest -vv
 push:
 	git push
+build:
+	python setup.py sdist

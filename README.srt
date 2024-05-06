@@ -1,0 +1,28 @@
+============
+django-ke-counties
+============
+
+django-ke-counties is a Django app to get all
+Kenyan counties, sub counties and wards.
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "polls" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...,
+        "django_ke_counties",
+    ]
+
+2. Include the django_ke_counties URLconf in your project urls.py like this::
+
+    path("counties/", include("django_ke_counties.urls")),
+
+3. Run ``python manage.py migrate`` to create the models and seed data.
+
+4. Start the development server and visit the admin to create a poll.
+
+5. Visit the ``/counties/`` URL to participate in the poll.
